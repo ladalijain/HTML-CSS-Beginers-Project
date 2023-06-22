@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+}
+
+ul.topnav {
+  position: fixed;
+top: 0;
+width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d7cfcf;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: rgb(29, 28, 28);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover {
+  background-color: #aea4a4;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+
+#intro {
+  color: rgb(207, 97, 77);
+  padding-top: 50px;
+  text-align: center;
+}
+
+#questions-container {
+  height: max-content;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.footer {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  background-color: #d7cfcf;
+  text-align: center;
+  position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+#html {
+  display: block;
+  padding-left: 70px;
+}
+
+#css,
+#sql,
+#mongo {
+  display: block;
+  padding-left: 70px;
+  
+}
+
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  <li><a class="active" href="#test">Test Series</a></li>
+  <li><a href="#html">HTML</a></li>
+  <li><a href="#css">CSS</a></li>
+  <li><a href="#sql">SQL</a></li>
+  <li><a href="#mongo">MongoDB</a></li>
+  <li class="right"><a href="#about">About</a></li>
+</ul>
+
+<div id="test">
+  <h2 id="intro">Hey! Welcome to our website. We are providing practice sets for various tests.</h2>
+</div>
+
+<div id="html">
+  <div id="questions-container">
+    <h1>HTML</h1>
+    <div class="question">
+      <h3>Question 1</h3>
+      <p>What does HTML stand for?</p>
+      <label><input type="radio" name="q1" value="a">a) Hyper Text Markup Language</label><br>
+      <label><input type="radio" name="q1" value="b">b) Hyperlinks and Text Markup Language</label><br>
+      <label><input type="radio" name="q1" value="c">c) Home Tool Markup Language</label><br>
+      <label><input type="radio" name="q1" value="d">d) None of the above</label>
+    </div>
+    <div class="question">
+      <h3>Question 2</h3>
+      <p>Which tag is used to define an unordered list in HTML?</p>
+      <label><input type="radio" name="q2" value="a">a) &lt;ul&gt;</label><br>
+      <label><input type="radio" name="q2" value="b">b) &lt;ol&gt;</label><br>
+      <label><input type="radio" name="q2" value="c">c) &lt;li&gt;</label><br>
+      <label><input type="radio" name="q2" value="d">d) &lt;u&gt;</label>
+    </div>
+    <div class="question">
+      <h3>Question 3</h3>
+      <p>Which attribute is used to specify the URL of the image in the &lt;img&gt; tag?</p>
+      <label><input type="radio" name="q3" value="a">a) src</label><br>
+      <label><input type="radio" name="q3" value="b">b) alt</label><br>
+      <label><input type="radio" name="q3" value="c">c) href</label><br>
+      <label><input type="radio" name="q3" value="d">d) link</label>
+    </div>
+    <div class="question">
+      <h3>Question 4</h3>
+      <p>Which element is used to define a table row in HTML?</p>
+      <label><input type="radio" name="q4" value="a">a) &lt;td&gt;</label><br>
+      <label><input type="radio" name="q4" value="b">b) &lt;th&gt;</label><br>
+      <label><input type="radio" name="q4" value="c">c) &lt;tr&gt;</label><br>
+      <label><input type="radio" name="q4" value="d">d) &lt;table&gt;</label>
+    </div>
+    <div class="question">
+      <h3>Question 5</h3>
+      <p>Which tag is used to create a hyperlink in HTML?</p>
+      <label><input type="radio" name="q5" value="a">a) &lt;a&gt;</label><br>
+      <label><input type="radio" name="q5" value="b">b) &lt;link&gt;</label><br>
+      <label><input type="radio" name="q5" value="c">c) &lt;href&gt;</label><br>
+      <label><input type="radio" name="q5" value="d">d) &lt;hyperlink&gt;</label>
+    </div>
+  </div>
+</div>
+
+  <div id="css" >
+    <div id="questions-container">
+      <h1>CSS</h1>
+      <div class="question">
+        <h3>Question 1</h3>
+        <p>What does CSS stand for?</p>
+        <label><input type="radio" name="q1" value="a">a) Cascading Style Sheets</label><br>
+        <label><input type="radio" name="q1" value="b">b) Computer Style Sheets</label><br>
+        <label><input type="radio" name="q1" value="c">c) Colorful Style Sheets</label><br>
+        <label><input type="radio" name="q1" value="d">d) Creative Style Sheets</label>
+      </div>
+      <div class="question">
+        <h3>Question 2</h3>
+        <p>Which CSS property is used to change the text color of an element?</p>
+        <label><input type="radio" name="q2" value="a">a) color</label><br>
+        <label><input type="radio" name="q2" value="b">b) text-color</label><br>
+        <label><input type="radio" name="q2" value="c">c) font-color</label><br>
+        <label><input type="radio" name="q2" value="d">d) text-style</label>
+      </div>
+      <div class="question">
+        <h3>Question 3</h3>
+        <p>Which CSS property is used to set the background color of an element?</p>
+        <label><input type="radio" name="q3" value="a">a) background-color</label><br>
+        <label><input type="radio" name="q3" value="b">b) bgcolor</label><br>
+        <label><input type="radio" name="q3" value="c">c) color</label><br>
+        <label><input type="radio" name="q3" value="d">d) background</label>
+      </div>
+      <div class="question">
+        <h3>Question 4</h3>
+        <p>Which CSS property is used to create space between the elements?</p>
+        <label><input type="radio" name="q4" value="a">a) margin</label><br>
+        <label><input type="radio" name="q4" value="b">b) padding</label><br>
+        <label><input type="radio" name="q4" value="c">c) space</label><br>
+        <label><input type="radio" name="q4" value="d">d) gap</label>
+      </div>
+      <div class="question">
+        <h3>Question 5</h3>
+        <p>Which CSS property is used to set the font size of an element?</p>
+        <label><input type="radio" name="q5" value="a">a) font-size</label><br>
+        <label><input type="radio" name="q5" value="b">b) text-size</label><br>
+        <label><input type="radio" name="q5" value="c">c) font-style</label><br>
+        <label><input type="radio" name="q5" value="d">d) text-font</label>
+      </div>
+    </div>
+  </div>
+  
+
+
+<div id="sql">
+    <div id="questions-container">
+      <h1>SQL</h1>
+      <div class="question">
+        <h3>Question 1</h3>
+        <p>What does SQL stand for?</p>
+        <label><input type="radio" name="q1" value="a">a) Structured Query Language</label><br>
+        <label><input type="radio" name="q1" value="b">b) Sequential Query Language</label><br>
+        <label><input type="radio" name="q1" value="c">c) Simple Query Language</label><br>
+        <label><input type="radio" name="q1" value="d">d) Systematic Query Language</label>
+      </div>
+      <div class="question">
+        <h3>Question 2</h3>
+        <p>Which SQL statement is used to insert data into a database?</p>
+        <label><input type="radio" name="q2" value="a">a) INSERT INTO</label><br>
+        <label><input type="radio" name="q2" value="b">b) ADD DATA</label><br>
+        <label><input type="radio" name="q2" value="c">c) ADD INTO</label><br>
+        <label><input type="radio" name="q2" value="d">d) INSERT DATA</label>
+      </div>
+      <div class="question">
+        <h3>Question 3</h3>
+        <p>Which SQL statement is used to update data in a database?</p>
+        <label><input type="radio" name="q3" value="a">a) UPDATE</label><br>
+        <label><input type="radio" name="q3" value="b">b) ALTER</label><br>
+        <label><input type="radio" name="q3" value="c">c) MODIFY</label><br>
+        <label><input type="radio" name="q3" value="d">d) CHANGE</label>
+      </div>
+      <div class="question">
+        <h3>Question 4</h3>
+        <p>Which SQL statement is used to delete data from a database?</p>
+        <label><input type="radio" name="q4" value="a">a) DELETE</label><br>
+        <label><input type="radio" name="q4" value="b">b) REMOVE</label><br>
+        <label><input type="radio" name="q4" value="c">c) ERASE</label><br>
+        <label><input type="radio" name="q4" value="d">d) DROP</label>
+      </div>
+      <div class="question">
+        <h3>Question 5</h3>
+        <p>Which SQL statement is used to retrieve data from a database?</p>
+        <label><input type="radio" name="q5" value="a">a) SELECT</label><br>
+        <label><input type="radio" name="q5" value="b">b) GET</label><br>
+        <label><input type="radio" name="q5" value="c">c) FETCH</label><br>
+        <label><input type="radio" name="q5" value="d">d) EXTRACT</label>
+      </div>
+    </div>    
+</div>
+
+<div id="mongo">
+    <div id="questions-container">
+      <h1>MOngoDB</h1>
+      <div class="question">
+        <h3>Question 1</h3>
+        <p>What does MongoDB store data in?</p>
+        <label><input type="radio" name="q1" value="a">a) Documents</label><br>
+        <label><input type="radio" name="q1" value="b">b) Tables</label><br>
+        <label><input type="radio" name="q1" value="c">c) Rows</label><br>
+        <label><input type="radio" name="q1" value="d">d) Columns</label>
+      </div>
+      <div class="question">
+        <h3>Question 2</h3>
+        <p>Which command is used to create a new collection in MongoDB?</p>
+        <label><input type="radio" name="q2" value="a">a) db.createCollection()</label><br>
+        <label><input type="radio" name="q2" value="b">b) db.collection()</label><br>
+        <label><input type="radio" name="q2" value="c">c) db.newCollection()</label><br>
+        <label><input type="radio" name="q2" value="d">d) db.addCollection()</label>
+      </div>
+      <div class="question">
+        <h3>Question 3</h3>
+        <p>Which command is used to insert a document into a collection in MongoDB?</p>
+        <label><input type="radio" name="q3" value="a">a) db.collection.insertOne()</label><br>
+        <label><input type="radio" name="q3" value="b">b) db.collection.insert()</label><br>
+        <label><input type="radio" name="q3" value="c">c) db.collection.addOne()</label><br>
+        <label><input type="radio" name="q3" value="d">d) db.collection.add()</label>
+      </div>
+      <div class="question">
+        <h3>Question 4</h3>
+        <p>Which command is used to find documents that match a specific condition in MongoDB?</p>
+        <label><input type="radio" name="q4" value="a">a) db.collection.find()</label><br>
+        <label><input type="radio" name="q4" value="b">b) db.collection.search()</label><br>
+        <label><input type="radio" name="q4" value="c">c) db.collection.query()</label><br>
+        <label><input type="radio" name="q4" value="d">d) db.collection.get()</label>
+      </div>
+      <div class="question">
+        <h3>Question 5</h3>
+        <p>Which command is used to update a document in MongoDB?</p>
+        <label><input type="radio" name="q5" value="a">a) db.collection.updateOne()</label><br>
+        <label><input type="radio" name="q5" value="b">b) db.collection.modify()</label><br>
+        <label><input type="radio" name="q5" value="c">c) db.collection.changeOne()</label><br>
+        <label><input type="radio" name="q5" value="d">d) db.collection.update()</label>
+      </div>
+    </div>
+  
+  
+
+</div>
+
+<footer>
+  <ul class="footer">
+    <li></li>
+  </ul>
+</footer>
+
+</body>
+</html>

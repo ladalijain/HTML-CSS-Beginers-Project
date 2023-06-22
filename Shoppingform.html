@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    select {
+      height: 34px;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+    }
+
+    .quantity input {
+      width: 60px;
+      margin-right: 10px;
+    }
+
+    .payment-method label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .submit-btn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form>
+      <div class="form-group">
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+      </div>
+
+      <div class="form-group">
+        <label for="food-items">Food Items:</label>
+        <select id="food-items" name="food-items" required>
+          <option value="">Select an option</option>
+          <option value="item1">Rice</option>
+          <option value="item2">Dal</option>
+          <option value="item3">Biryani</option>
+          <option value="item3">Fruits</option>
+          <option value="item3">Panner Fry</option>
+          <option value="item3">Kaju Kari</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <div class="quantity">
+          <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+          <button type="button" id="quantity-increase">+</button>
+          <button type="button" id="quantity-decrease">-</button>
+        </div>
+      </div>
+
+      <div class="form-group payment-method">
+        <label>Payment Method:</label>
+        <label for="payment-cash">
+          <input type="radio" id="payment-cash" name="payment-method" value="cash" required>
+          Cash
+        </label>
+        <label for="payment-card">
+          <input type="radio" id="payment-card" name="payment-method" value="card" required>
+          Card
+        </label>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Submit" class="submit-btn">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
